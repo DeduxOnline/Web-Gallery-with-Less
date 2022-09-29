@@ -1,0 +1,23 @@
+@font: sans-serif;
+@clr1: green;
+@clr2: grey;
+@clr3: black;
+li a,.pictext .content > p {
+    font-family: @font;
+    color: white;
+}
+body{
+    background-image: linear-gradient(0deg, @clr1, @clr2);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+li a:hover:not(.active),.active {
+    background-color: @clr1;
+}
+.container > div > img:hover {
+    border: 2px solid @clr3;
+}
+li {
+    float: left;
+    border-right: 2px solid @clr3;
+} 
